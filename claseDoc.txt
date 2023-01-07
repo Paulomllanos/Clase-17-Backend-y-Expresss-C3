@@ -1,0 +1,44 @@
+----------------------------CLASE EXPLICADA-------------------------------------
+
+1) Backend? Hablar sobre el backend, como se comporta el servidor vs el usuario/cliente, como envia y obtiene informacion.
+
+2) Introduccion a express
+
+- Que es express? Framework = Un entorno de trabajo​ o marco de trabajo​ es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia, para enfrentar y resolver nuevos problemas de índole similar.
+
+- Que permite? Es un entorno d etrabajo que permite establecer una insfractuctura web usando node, donde se desarrollan apis, app web y monitoreos de rendimiento.
+
+- Instalacion npm i express
+
+3) Que es el instanciamento? La instanciación es el proceso de leer o especificar información, como los valores y el tipo de almacenamiento de un campo de datos. Para express lo que realizaremos es un levantamiento de un servidor, el cual otorgamos rutas especificas para el uso o llegada de datos.
+
+- Realizar levantamiento de servidor en index.js, luego explicar request y response, hacer response tanto con send, como con json
+- Hacer get y post , explicar las diferencias y porque post no se muestra en el navegador
+- Enseñar el uso de Thunder Client , extension de vs code ------------
+- Enseñar que los parametros son posicionales /friends/:firstname/:lastname
+- Despues del ejercicio explicar como se envia algo con post, y como se utiliza el body de Thunder(Ojo solo los post y put pueden utilizar body en su req, los get no)
+- el body de thunder debe ser si o si en "" ya que se trata de un json
+- Explicar que para utilizar el body debemos configurar express para que entienda que puede recibir un json, esto lo hacemos con app.use(express.json())
+- Hacer un ejemplo del uso de base de datos con express con register put y get.
+
+4) FS
+- Explicar como funciona fs = modulo que viene incorporado con node y no necesita ser isntalado, nos sirve para modificar, leer y almacenar informacionde un archivo txt en nuestro proyecto
+- Se crea un archivo txt
+- const fs = require('fs') ya que viene desde node
+- fs.readfile(ruta del archivo, especificamos el juego de caracteres que vamos a usar(utf-8), (error, datos) => {})
+- fs.appendFile = ('./users.txt', 'Mensaje que quiero agregar', () => {}) me sirve para enviar algo a este block de notas
+- fs.writeFile y unlink PPT
+
+5) put y delete con FS
+- ejemplo - ejercicio 
+
+6) Info extra:
+
+- Cuando se trabaja enviando archivos html como respuesta a una peticion, se realiza normalmente con template engine(ejs). Como los html se generan desde el lado del servidor, decimos que se utiliza SERVER SIDE RENDERING (SSR), lo cual es bueno para el SEO 
+
+- React no es bueno para el SEO, por lo cual tiene un framework que se llama next.js, permitiendonos hacer el SSR
+
+7) Routes en express(carpeta routes y su funcionamiento)
+- Mostrar que es y como funciona, no olvidar de hacer peticion get y post despues de haberla hecho
+
+
